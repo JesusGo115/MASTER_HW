@@ -1,8 +1,17 @@
-<!DOCTYPE html>
+<!-- DOCTYPE html
+
+Filename: home.html
+Name: Jesus "Chuy" Gomez
+Partner: Jonathan Quintero
+Date: 4/2/2019
+Course: CST205 Multimedia Design and Programming
+Description: The following code will grab all the information given by the 'hw4.py' file and display the title and links   to 3 images that all contain the name and author.
+
+-->
 <html>
 
 	<head>
-		<title>Pictures</title>
+		<title>Pictures</title> <!-- This is the title of the main website -->
 	</head>
 
 	<body>
@@ -12,12 +21,13 @@
 		<br>
 		<img src={{url_for('static', filename=first_pic['id'] + ".jpg")}}/>
 		</p>
-
+	<!-- This section of the code uses the 'url_for' functions to grab the image's information from the 'hw4.py' file 		and creates a url based on the image's id. Afterwards, the next line of code prints out the name of the 		image and the author as a clickable link to see the image's information. The img tag is used to display			the image-->
 		<p>
 		<a style="font-size:20px" href="{{url_for('image', image_id=second_pic['id'])}}">{{second_pic['title']}} by {{second_pic['flickr_user']}}</a>
 		<br>
 		<img src={{url_for('static', filename=second_pic['id'] + ".jpg")}}/>
 		</p>
+		<!-- Same as the previous code, but it uses different images so all the images aren't the same-->
 		<p>
 		<a style="font-size:20px" href="{{url_for('image', image_id=third_pic['id'])}}">{{third_pic['title']}} by {{third_pic['flickr_user']}}</a>
 		<br>

@@ -1,4 +1,11 @@
-
+'''
+Name: Jesus "Chuy" Gomez
+Partner: Jonathan Quintero
+Date: 4/2/2019
+Course: CST205 Multimedia Design and Programming
+Description: The following code is the source of all the image's key information in which we just import within the 
+'hw4.py' file.
+'''
 
 image_info = [
      {

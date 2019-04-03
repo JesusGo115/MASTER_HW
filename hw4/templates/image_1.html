@@ -1,12 +1,24 @@
-<!DOCTYPE html>
+<!--DOCTYPE html
+
+Filename: image_1.html
+Name: Jesus "Chuy" Gomez
+Partner: Jonathan Quintero
+Date: 4/2/2019
+Course: CST205 Multimedia Design and Programming
+Description: The following code will grab all the information given by the 'hw4.py' file and display the title of the 		page, the title and author of the chosen image, the image, and the width and height of the image.
+
+-->
 <html>
 	<head>
-		<title>Image 1</title>
+		<title>Image 1</title> <!-- The title of the website -->
 	</head>
 	<body>
 		<h1 style="Nimbus Sans">"{{chosen_img['title']}}" by {{chosen_img['flickr_user']}}</h1>
 		<img src="/static/{{ chosen_img['id'] }}.jpg" class="rounded-circle" alt="No Image Available">
 		<h3> RGB image in JPEG format with width {{width}} and height {{height}}.</h3>
+	<!-- This code sets the 'Nimbus Sans style to the following text and prints out the information given by the			'hw4.py' file to display the title and author of the image. The next line displays the image the user 			clicked on and displays the width and height of the image beneath the image itself. -->
+
 	</body>
-	<p><a href="{{url_for('home') }}">Take me back</a></p>
+	<p><a href="{{url_for('home') }}">Back to the Main Page</a></p>
+	<!-- This line of code is below the image and will take the user back to the main page once the user clicks on it.		-->
 </html>
