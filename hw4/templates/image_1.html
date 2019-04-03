@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Image 1</title>
+	</head>
+	<body>
+		<h1 style="Nimbus Sans">"{{chosen_img['title']}}" by {{chosen_img['flickr_user']}}</h1>
+		<img src="/static/{{ chosen_img['id'] }}.jpg" class="rounded-circle" alt="No Image Available">
+		<h3> RGB image in JPEG format with width {{width}} and height {{height}}.</h3>
+	</body>
+	<p><a href="{{url_for('home') }}">Take me back</a></p>
+</html>

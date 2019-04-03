@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Pictures</title>
+	</head>
+
+	<body>
+		<h1>Pictures</h1>
+		<p>
+		<a style="font-size:20px" href="{{url_for('image', image_id=first_pic['id'])}}">{{first_pic['title']}} by {{first_pic['flickr_user']}}</a>
+		<br>
+		<img src={{url_for('static', filename=first_pic['id'] + ".jpg")}}/>
+		</p>
+
+		<p>
+		<a style="font-size:20px" href="{{url_for('image', image_id=second_pic['id'])}}">{{second_pic['title']}} by {{second_pic['flickr_user']}}</a>
+		<br>
+		<img src={{url_for('static', filename=second_pic['id'] + ".jpg")}}/>
+		</p>
+		<p>
+		<a style="font-size:20px" href="{{url_for('image', image_id=third_pic['id'])}}">{{third_pic['title']}} by {{third_pic['flickr_user']}}</a>
+		<br>
+		<img src={{url_for('static', filename=third_pic['id'] + ".jpg")}}/>
+		</p>
+	</body>
+</html>
